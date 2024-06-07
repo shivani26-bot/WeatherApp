@@ -16,16 +16,19 @@ async function checkWeather(city) {
   document.querySelector(".windy").innerHTML = data.current.wind_kph + "km/hr";
   document.querySelector(".humidity").innerHTML = data.current.humidity + "%";
 
+  const conditionText = data.current.condition.text;
   if (data.current.condition.text === "Partly cloudy") {
     weatherIcon.src = "images/cloudy.png";
   } else if (data.current.condition.text === "Sunny") {
     weatherIcon.src = "images/sunny.png";
-  } else if (data.current.condition.text === "Patchy light rain") {
+  } else if (conditionText.toLowerCase().includes("rain")) {
     weatherIcon.src = "images/rainy.png";
   } else if (data.current.condition.text === "Mist") {
     weatherIcon.src = "images/mist.png";
   } else if (data.current.condition.text === "Clear") {
     weatherIcon.src = "images/clear.png";
+  } else if (data.current.condition.text === "Fog") {
+    weatherIcon.src = "images/fog.png";
   }
 }
 
