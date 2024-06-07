@@ -1,0 +1,149 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Dawning of a New Day", cursive;
+}
+
+body {
+  background: #000000;
+}
+
+.card {
+  height: 250px;
+  width: 200px;
+
+  border-radius: 5px;
+  background: rgb(33, 161, 194);
+  background: linear-gradient(
+    125deg,
+    rgba(33, 161, 194, 1) 0%,
+    rgba(241, 218, 31, 1) 100%
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto 50px;
+}
+
+.centre-card {
+  height: 200px;
+  width: 160px;
+  /* border: 1px solid black; */
+}
+
+.search-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+}
+
+.search-section input {
+  padding: 8px 10px;
+  font-size: 8px;
+  color: #555;
+  outline: none;
+  border: none;
+  width: 80%;
+  height: 20px;
+  border-radius: 20px;
+
+  background: #ebfffc;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+.search-section button {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: none;
+  background: #ebfffc;
+  z-index: 1;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-section button img {
+  height: 6px;
+  width: 6px;
+  z-index: 2;
+}
+
+.weather-section {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  line-height: 2;
+  color: white;
+  font-size: 10px;
+  font-weight: 90;
+  /* border: 1px solid black; */
+}
+
+.weather-icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* .temperature {
+
+} */
+.city-name {
+  letter-spacing: 0.06em;
+}
+
+.humid-icon {
+  width: 30px;
+  height: 30px;
+
+  /* border: 1px solid black; */
+}
+
+.wind-icon {
+  width: 25px;
+  height: 25px;
+  /* transform: scale(1.6);
+  transform-origin: center; */
+}
+
+.weather-details {
+  margin-top: 22px;
+  display: flex;
+
+  justify-content: space-between;
+  font-size: 8px;
+  color: white;
+  /* border: 1px solid black; */
+}
+.wind-section {
+  display: flex;
+  /* border: 1px solid black; */
+  justify-content: space-around;
+}
+.humid-section {
+  display: flex;
+
+  justify-content: space-around;
+  /* line-height: 13px; */
+  /* border: 1px solid black; */
+}
+
+.humid {
+  padding: 2px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.wind {
+  padding: 2px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
