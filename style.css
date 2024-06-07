@@ -96,7 +96,7 @@ body {
 /* .temperature {
 
 } */
-.city-name {
+.city {
   letter-spacing: 0.06em;
 }
 
@@ -125,25 +125,21 @@ body {
 }
 .wind-section {
   display: flex;
-  /* border: 1px solid black; */
   justify-content: space-around;
 }
 .humid-section {
   display: flex;
-
   justify-content: space-around;
-  /* line-height: 13px; */
-  /* border: 1px solid black; */
 }
 
 .humid {
   padding: 2px;
   line-height: 1.5;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
 }
 
 .wind {
   padding: 2px;
   line-height: 1.5;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
 }
