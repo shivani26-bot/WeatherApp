@@ -29,6 +29,8 @@ async function checkWeather(city) {
     weatherIcon.src = "images/clear.png";
   } else if (data.current.condition.text === "Fog") {
     weatherIcon.src = "images/fog.png";
+  } else if (conditionText.toLowerCase().includes("snow")) {
+    weatherIcon.src = "images/snow.png";
   }
 }
 

@@ -2,7 +2,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Dawning of a New Day", cursive;
+  font-family: cursive;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
 }
 
 .card {
-  height: 250px;
+  min-height: 250px;
   width: 200px;
 
   border-radius: 5px;
@@ -28,9 +28,8 @@ body {
 }
 
 .centre-card {
-  height: 200px;
+  min-height: 200px;
   width: 160px;
-  /* border: 1px solid black; */
 }
 
 .search-section {
